@@ -10,11 +10,11 @@ if [ -z "$1" ]; then
         echo "Could not infer current day"
         exit 1
     else
-        DAY_NUM=$LATEST_DAY
+	DAY_NUM=$((10#$LATEST_DAY))
     fi
 else
     # If a day number is provided as an argument, use that.
-    DAY_NUM=$1
+    DAY_NUM=$((10#$1))
 fi
 
 # Format the day number to always have two digits (e.g., 1 becomes 01).

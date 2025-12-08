@@ -15,7 +15,7 @@ if [ -z "$1" ]; then
     fi
 else
     # If a day number is provided as an argument, use that.
-    DAY_NUM=$1
+    DAY_NUM=$((10#$1))
 fi
 
 # Format the day number to always have two digits (e.g., 1 becomes 01).
